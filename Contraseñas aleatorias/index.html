@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Evita que terceros ingresen a tus cuentas con contraseñas seguras y aleatorias con nuestro GENERADOR DE CONTRASEÑAS🔒 ">
+    <meta name="keywords" content="Generador de contraseñas, Facebook ,como hackear una cuenta de facebook,contraseñas aleatorias,contraseña, que hacer si fui hackeado">
+    <meta name="author" content="Duvan Mancilla">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="icon" href="../Multimedia/mostrar-contrasena.png">
+    <title>Generador de contraseñas</title>
+</head>
+<body>
+    <header>
+    <div class="redes">
+      <a href="https://github.com/DuvanLT/RandomPassWords.git" target="_blank"><img src="../Multimedia/GitHub_Logo.png" alt=""></a>
+    </div>
+    </header>
+    <div class="container">
+        <div class="decoracion">
+            <div class="des">
+                <span>1</span>
+                <span>a</span>
+                <span>5</span>
+                <span>D</span>
+                <span>7</span>
+                <span>?</span>
+                <span>x</span>
+                <span>></span>
+                <span>¡</span>
+                <span>i</span>
+                <span>b</span>
+            </div>
+        </div>
+       <input type="text" class="contraseña" id="password" value="*********"  >
+        <div class="configuracion">
+            <div class="rango"><label for="range"><input type="number" name="range" id="range" value="8" min="8" max="16">Cantidad caracteres</label></div>
+            <div class="numeros"> <label for="checkNum"><input type="checkbox" name="checkBum" id="checkNum" > Numeros </label></div>
+            <div class="simbolos"> <label for="checkSimb"><input type="checkbox" name="checkSimb" id="checkSimb"> Simbolos</label></div>
+        </div>
+       <div class="container-botones">
+       <button id="generar">Generar contraseña</button>
+
+      <button id="copiar" data-clipboard-action="copy" data-clipboard-target="#password"> <img src="../Multimedia/cp.png" alt="Copy to clipboard" width="20px"></img></button>
+
+        </div>
+    </div>
+    <div class="copiado">COPIADO</div>
+
+    <article>
+        <section>
+    <div class="recomendaciones">
+    <h1>¿COMO TENER UNA CONTRASEÑA SEGURA?</h1>
+    <ol>
+        <li>❌No utilices tu nombre o fecha de nacimiento como contraseña ya que cualquier persona hoy en dia puede saber esta informacion tuya a través de redes sociales como Facebook</li>
+        <li>✅Se recomienda que tu contraseña tenga 12 caracteres minimo y maximo 16 para su facil aprendizaje</li>
+        <li>✅Usa caracteres especiales esto aumentara la dificultad de decifrado :)</li>
+        <li>✅Cambiala frecuentemente, preferiblemente mensualmente</li>
+        <li>❌No compartir tu clave con terceros</li>
+    </ol>
+    </div>
+        </section>
+    </article>
+
+
+    <script src="../dist/clipboard.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+
+            <script>
+                var clipboard = new ClipboardJS('#copiar');
+            </script>
+    
+    <script src="../JAVASCRIPT/scripts.js"></script>
+</body>
+</html>
